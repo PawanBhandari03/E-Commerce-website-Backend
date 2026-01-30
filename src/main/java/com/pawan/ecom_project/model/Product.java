@@ -20,14 +20,14 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
-    private String desc;
+    private String description;
     private String brand;
     private Double price;
     private String category;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private Date releaseDate;
-    private Boolean available;
+    private Boolean productAvailable;
     private Integer stockQuantity;
 
     private String imageName;
